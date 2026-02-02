@@ -46,13 +46,15 @@ A **Python program** to calculate the total cost of a trip, including hotel stay
 
 
 ---
-
+```
 **Example Input:**
 - Enter the number of nights: 5
 - Enter the city name: Tampa
 - Enter the number of rental days: 4
 - Enter the money spent: 200
-
+```
+---
+```
 **Example Output:**
 
 - Hotel= $ 700
@@ -61,3 +63,10 @@ A **Python program** to calculate the total cost of a trip, including hotel stay
 - Spending money= $ 200
 
 Total trip cost= $ 1260
+```
+---
+
+## 👤 Author
+
+**Aparna Murali**
+Beginner Python Developer | Data Analytics Enthusiast
