@@ -42,11 +42,6 @@ def trip_cost(city_name,days,spending_money):
 
     # Calculate the total trip cost including hotel, flight, car rental, and spending money.
 
-    print("Hotel= $",hotel_cost(days))
-    print("Flight= $",plane_ride_cost(city_name))
-    print("Car rental= $",rental_car_cost(days))
-    print("Spending money= $",spending_money)
-
     return hotel_cost(days)+ plane_ride_cost(city_name) + rental_car_cost(days) + spending_money
 
 # User inputs
@@ -56,6 +51,11 @@ city_name=input("Enter the city name")
 spending_money =int(input("Enter the money spent: ")) 
 
 # Calculate total trip cost
+
+print("Hotel= $",hotel_cost(days))
+print("Flight= $",plane_ride_cost(city_name))
+print("Car rental= $",rental_car_cost(days))
+print("Spending money= $",spending_money)
 
 total_amount = trip_cost(city_name,days,spending_money)
 print("\nTotal trip cost= $",total_amount)
