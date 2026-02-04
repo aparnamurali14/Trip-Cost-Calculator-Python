@@ -5,8 +5,8 @@ def hotel_cost(no_of_nights):
     # Calculate the total hotel cost. Hotel cost is $140 per night.
     
     hotel_cost_per_night=140
-    total_hotel_cost=no_of_nights*hotel_cost_per_night
-    return total_hotel_cost
+    return no_of_nights*hotel_cost_per_night
+    
 
 
 def plane_ride_cost(city_name):
