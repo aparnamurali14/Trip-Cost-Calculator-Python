@@ -38,31 +38,26 @@ def rental_car_cost(rental_days):
         return base_rental_cost 
     
 
-def trip_cost(city_name,no_of_nights,days,spending_money):
+def trip_cost(city_name,days,spending_money):
 
     # Calculate the total trip cost including hotel, flight, car rental, and spending money.
 
-    hotel = hotel_cost(no_of_nights)
-    flight = plane_ride_cost(city_name)
-    car = rental_car_cost(days)
+    total = hotel_cost(days)+ plane_ride_cost(city_name) + rental_car_cost(days) + spending_money
 
-    total = hotel + flight + car + spending_money
-
-    print("Hotel= $",hotel)
-    print("Flight= $",flight)
-    print("Car rental= $",car)
+    print("Hotel= $",hotel_cost(days))
+    print("Flight= $",plane_ride_cost(city_name))
+    print("Car rental= $",rental_car_cost(days))
     print("Spending money= $",spending_money)
     
     return total
 
 # User inputs
 
-no_of_nights=int(input("Enter the number of nights"))
+days=int(input("Enter the number of night stay in hotel"))
 city_name=input("Enter the city name")
-rental_days=int(input("Enter the number of rental days"))
 spending_money = int(input("Enter the money spent: "))
 
 # Calculate total trip cost
 
-total_amount = trip_cost(city_name, no_of_nights,rental_days,spending_money)
+total_amount = trip_cost(city_name,days,spending_money)
 print("\nTotal trip cost= $",total_amount)
